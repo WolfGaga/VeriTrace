@@ -12,7 +12,7 @@ license = {file = "LICENSE"}
 dependencies = [
   "anthropic", "beautifulsoup4", "duckduckgo-search==5.3.1b1", "fastapi",
   "janus", "openai", "pydantic>=2.6,<3", "python-dotenv",
-  "requests", "sse-starlette", "uvicorn",
+  "requests", "sse-starlette==1.8.2", "uvicorn",
 ]
 
 [project.optional-dependencies]
