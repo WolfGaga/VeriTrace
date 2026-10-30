@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="880" viewBox="0 0 1440 880">
+<rect width="1440" height="880" fill="#f8fafc"/>
+<style>text{font-family:Segoe UI,Arial,sans-serif;fill:#0f172a}.title{font-size:30px;font-weight:700}.heading{font-size:22px;font-weight:600}.path{font-size:18px;fill:#334155}a:hover text{fill:#2563eb;text-decoration:underline}</style>
+<text class="title" x="40" y="55">VeriTrace code map</text>
+<text class="path" x="40" y="86">Module ownership and source locations</text>
+<rect x="480" y="113" width="480" height="70" rx="12" fill="#0f172a"/>
+<text x="720" y="145" text-anchor="middle" style="font-size:22px;font-weight:600;fill:white">Research entry points</text>
+<text x="720" y="168" text-anchor="middle" style="font-size:16px;fill:#cbd5e1">HTTP API / terminal / batch / evidence replay</text>
+<path d="M720 183 V205 H240 V230 M720 205 V230 M720 205 H1200 V230" fill="none" stroke="#94a3b8" stroke-width="2"/>
+<rect x="40" y="230" width="400" height="245" rx="12" fill="white" stroke="#cbd5e1"/>
+<rect x="40" y="230" width="6" height="245" rx="3" fill="#2563eb"/>
+<text class="heading" x="63" y="269">Research runtime</text>
+<a href="../veritrace/agent/veritrace_agent.py"><text class="path" x="63" y="310">veritrace_agent.py</text></a>
+<a href="../veritrace/agent/runtime/events.py"><text class="path" x="63" y="341">runtime/events.py</text></a>
+<a href="../veritrace/agent/runtime/scheduler.py"><text class="path" x="63" y="372">runtime/scheduler.py</text></a>
+<a href="../veritrace/agent/runtime/program.py"><text class="path" x="63" y="403">runtime/planner.py + program.py</text></a>
+<a href="../veritrace/agent/runtime/async_stream.py"><text class="path" x="63" y="434">runtime/async_stream.py</text></a>
+<path d="M240 475 V545" stroke="#cbd5e1" stroke-width="2"/>
+<rect x="520" y="230" width="400" height="245" rx="12" fill="white" stroke="#cbd5e1"/>
+<rect x="520" y="230" width="6" height="245" rx="3" fill="#7c3aed"/>
+<text class="heading" x="543" y="269">Cognition and evidence</text>
+<a href="../veritrace/agent/cognitive_graph.py"><text class="path" x="543" y="310">cognitive_graph.py</text></a>
+<a href="../veritrace/agent/cognitive_graph_manager.py"><text class="path" x="543" y="341">cognitive_graph_manager.py</text></a>
+<a href="../veritrace/agent/reader.py"><text class="path" x="543" y="372">prefilter.py + reader.py</text></a>
+<a href="../veritrace/agent/evidence_store.py"><text class="path" x="543" y="403">evidence_store.py</text></a>
+<a href="../veritrace/agent/prompts/"><text class="path" x="543" y="434">prompts/</text></a>
+<path d="M720 475 V545" stroke="#cbd5e1" stroke-width="2"/>
+<rect x="1000" y="230" width="400" height="245" rx="12" fill="white" stroke="#cbd5e1"/>
+<rect x="1000" y="230" width="6" height="245" rx="3" fill="#059669"/>
+<text class="heading" x="1023" y="269">Report writing</text>
+<a href="../veritrace/agent/writing.py"><text class="path" x="1023" y="310">writing.py</text></a>
+<a href="../veritrace/agent/outline_planner.py"><text class="path" x="1023" y="341">outline_planner.py</text></a>
+<a href="../veritrace/agent/section_planner.py"><text class="path" x="1023" y="372">section_planner.py</text></a>
+<a href="../veritrace/agent/section_writer.py"><text class="path" x="1023" y="403">section_writer.py</text></a>
+<a href="../veritrace/agent/report_extractor.py"><text class="path" x="1023" y="434">report_extractor.py</text></a>
+<path d="M1200 475 V545" stroke="#cbd5e1" stroke-width="2"/>
+<rect x="40" y="545" width="400" height="245" rx="12" fill="white" stroke="#cbd5e1"/>
+<rect x="40" y="545" width="6" height="245" rx="3" fill="#2563eb"/>
+<text class="heading" x="63" y="584">Model providers</text>
+<a href="../veritrace/agent/providers/policy.py"><text class="path" x="63" y="625">providers/types.py + policy.py</text></a>
+<a href="../veritrace/agent/providers/openai.py"><text class="path" x="63" y="656">providers/openai.py</text></a>
+<a href="../veritrace/agent/providers/anthropic.py"><text class="path" x="63" y="687">providers/anthropic.py</text></a>
+<a href="../veritrace/agent/providers/generic.py"><text class="path" x="63" y="718">providers/generic.py</text></a>
+<a href="../veritrace/agent/providers/rotating.py"><text class="path" x="63" y="749">providers/rotating.py</text></a>
+<rect x="520" y="545" width="400" height="245" rx="12" fill="white" stroke="#cbd5e1"/>
+<rect x="520" y="545" width="6" height="245" rx="3" fill="#7c3aed"/>
+<text class="heading" x="543" y="584">Search and request context</text>
+<a href="../veritrace/agent/searcher.py"><text class="path" x="543" y="625">searcher.py</text></a>
+<a href="../veritrace/agent/core/tools.py"><text class="path" x="543" y="656">core/tools.py</text></a>
+<a href="../veritrace/agent/core/page_reader.py"><text class="path" x="543" y="687">core/page_reader.py</text></a>
+<a href="../veritrace/agent/concurrency.py"><text class="path" x="543" y="718">concurrency.py</text></a>
+<a href="../veritrace/agent/usage_tracker.py"><text class="path" x="543" y="749">usage_tracker.py</text></a>
+<rect x="1000" y="545" width="400" height="245" rx="12" fill="white" stroke="#cbd5e1"/>
+<rect x="1000" y="545" width="6" height="245" rx="3" fill="#059669"/>
+<text class="heading" x="1023" y="584">Clients and persistence</text>
+<a href="../veritrace/app.py"><text class="path" x="1023" y="625">app.py + conversation_db.py</text></a>
+<a href="../frontend/React/src/research/"><text class="path" x="1023" y="656">React/src/research/</text></a>
+<a href="../frontend/React/src/hooks/"><text class="path" x="1023" y="687">React/src/hooks/</text></a>
+<a href="../frontend/research_client.py"><text class="path" x="1023" y="718">frontend/research_client.py</text></a>
+<a href="../benchmark/run_terminal.py"><text class="path" x="1023" y="749">benchmark/run_terminal.py</text></a>
+<text class="path" x="40" y="838">Execution and event flow: architecture.md</text>
+</svg>

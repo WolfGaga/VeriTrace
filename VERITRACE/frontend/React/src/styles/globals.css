@@ -1,0 +1,355 @@
+/* ============================================
+   FONTS
+   ============================================ */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/fonts/inter-latin.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 100 800;
+  font-display: swap;
+  src: url('/fonts/jetbrains-mono-latin.woff2') format('woff2');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-bento-bg text-text-primary font-sans antialiased;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  }
+
+  ::selection {
+    @apply bg-accent-blue/20 text-accent-blue;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    @apply w-2 h-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-bento-border/50 rounded-full;
+    @apply hover:bg-bento-border;
+  }
+
+  /* Focus styles */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-accent-blue/50 ring-offset-2 ring-offset-bento-bg;
+  }
+}
+
+/* ============================================
+   COMPONENT CLASSES
+   ============================================ */
+@layer components {
+  /* Bento Card Base */
+  .bento-card {
+    @apply bg-bento-surface rounded-bento border border-bento-borderLight shadow-bento;
+    @apply transition-all duration-300 ease-out;
+  }
+
+  .bento-card-hover {
+    @apply hover:shadow-bento-hover hover:-translate-y-1;
+  }
+
+  .bento-card-interactive {
+    @apply bento-card bento-card-hover cursor-pointer;
+    @apply active:scale-[0.98] active:shadow-bento;
+  }
+
+  /* Bento Card Variants */
+  .bento-card-elevated {
+    @apply bento-card shadow-bento-lg;
+  }
+
+  .bento-card-gradient {
+    @apply bento-card bg-gradient-to-br from-accent-blue/5 to-accent-purple/5;
+  }
+
+  .bento-card-3d {
+    @apply bento-card shadow-bento-3d;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+
+  /* Glass Effect */
+  .glass-effect {
+    @apply bg-white/80 backdrop-blur-xl;
+  }
+
+  /* Gradient Text */
+  .gradient-text {
+    @apply bg-gradient-to-r from-accent-blue to-accent-purple bg-clip-text text-transparent;
+  }
+
+  /* Button Styles */
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3;
+    @apply bg-accent-blue text-white font-medium rounded-full;
+    @apply transition-all duration-200;
+    @apply hover:bg-accent-blueHover hover:shadow-lg hover:-translate-y-0.5;
+    @apply active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3;
+    @apply bg-bento-surface text-text-primary font-medium rounded-full border border-bento-border;
+    @apply transition-all duration-200;
+    @apply hover:bg-bento-surfaceHover hover:shadow-md;
+    @apply active:scale-95;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center px-4 py-2;
+    @apply text-text-secondary font-medium rounded-bento-sm;
+    @apply transition-all duration-200;
+    @apply hover:bg-bento-surfaceHover hover:text-text-primary;
+  }
+
+  /* Input Styles */
+  .input-bento {
+    @apply w-full px-4 py-3 bg-bento-surface border border-bento-borderLight rounded-bento-sm;
+    @apply text-text-primary placeholder:text-text-muted;
+    @apply transition-all duration-200;
+    @apply focus:border-accent-blue focus:ring-2 focus:ring-accent-blue/20;
+  }
+
+  /* Tag/Chip Styles */
+  .chip {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 text-caption;
+    @apply bg-bento-surfaceHover text-text-secondary rounded-full;
+  }
+
+  .chip-accent {
+    @apply chip bg-accent-blue/10 text-accent-blue;
+  }
+
+  /* Mind Map Node Styles */
+  .node-base {
+    @apply px-4 py-2 rounded-bento-sm bg-bento-surface border border-bento-borderLight;
+    @apply text-body-sm font-medium;
+    @apply transition-all duration-200;
+  }
+
+  .node-active {
+    @apply node-base border-accent-blue bg-accent-blue/5 text-accent-blue;
+    @apply shadow-md;
+  }
+
+  .node-complete {
+    @apply node-base border-accent-green/50 bg-accent-green/5 text-accent-green;
+  }
+
+  .node-loading {
+    @apply node-base animate-pulse bg-gradient-to-r from-bento-surface to-bento-surfaceHover;
+  }
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+@layer utilities {
+  /* Text Utilities */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Animation Utilities */
+  .animate-delay-100 {
+    animation-delay: 100ms;
+  }
+
+  .animate-delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .animate-delay-300 {
+    animation-delay: 300ms;
+  }
+
+  .animate-delay-500 {
+    animation-delay: 500ms;
+  }
+
+  /* 3D Transform Utilities */
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .perspective-2000 {
+    perspective: 2000px;
+  }
+
+  /* Gradient Border */
+  .gradient-border {
+    position: relative;
+  }
+
+  .gradient-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, theme('colors.accent.blue'), theme('colors.accent.purple'));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+
+  /* Hide Scrollbar */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Line Clamp */
+  .line-clamp-1 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+  }
+
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .line-clamp-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+}
+
+/* ============================================
+   TYPOGRAPHY (PROSE) OVERRIDES
+   ============================================ */
+.prose {
+  @apply text-text-primary;
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4 {
+  @apply text-text-primary font-semibold;
+}
+
+.prose a {
+  @apply text-accent-blue no-underline hover:underline;
+}
+
+.prose code {
+  @apply bg-bento-surfaceHover px-1.5 py-0.5 rounded text-caption font-mono;
+  @apply before:content-none after:content-none;
+}
+
+.prose pre {
+  @apply bg-[#1d1d1f] text-white rounded-bento-sm overflow-x-auto;
+}
+
+.prose pre code {
+  @apply bg-transparent p-0;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-accent-blue/30 bg-accent-blue/5 py-1 pl-4 not-italic;
+}
+
+.prose ul, .prose ol {
+  @apply pl-6;
+}
+
+.prose li {
+  @apply marker:text-text-secondary;
+}
+
+/* ============================================
+   REFERENCE CITATION STYLES
+   ============================================ */
+.reference-citation {
+  @apply inline-flex items-center justify-center min-w-[1.25rem] h-5 px-1.5;
+  @apply text-xs font-medium text-accent-blue bg-accent-blue/10 rounded;
+  @apply cursor-pointer transition-all duration-200;
+  @apply hover:bg-accent-blue hover:text-white;
+}
+
+/* ============================================
+   3D CANVAS CONTAINER
+   ============================================ */
+.canvas-container {
+  @apply absolute inset-0 -z-10 overflow-hidden;
+}
+
+/* ============================================
+   LOADING STATES
+   ============================================ */
+.skeleton {
+  @apply animate-pulse bg-gradient-to-r from-bento-surfaceHover via-bento-surface to-bento-surfaceHover;
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.5s ease-in-out infinite;
+}
+
+@keyframes skeleton-shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* ============================================
+   ANT DESIGN OVERRIDES
+   ============================================ */
+.ant-input {
+  @apply !bg-transparent !border-none !shadow-none;
+}
+
+.ant-input:focus {
+  @apply !shadow-none;
+}
+
+.ant-message {
+  @apply !top-20;
+}
+
+.ant-message-notice-content {
+  @apply !bg-bento-surface !rounded-bento-sm !shadow-bento-hover !border !border-bento-borderLight;
+  @apply !px-4 !py-3;
+}
+
+.ant-tooltip-inner {
+  @apply !bg-[#1d1d1f] !rounded-bento-sm !text-caption;
+}

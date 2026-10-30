@@ -1,0 +1,24 @@
+name: Bug report
+description: Report a reproducible problem in research, the API, or the interface.
+body:
+  - type: textarea
+    attributes:
+      label: What happened?
+      description: Describe expected and actual behavior.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Reproduction
+      description: Include the command or steps and a non-sensitive example question.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Environment
+      description: OS, Python/Node versions, provider and model names. Do not include keys.
+  - type: textarea
+    attributes:
+      label: Redacted logs
+      description: Remove credentials, private questions, tokens and account details.
+      render: text

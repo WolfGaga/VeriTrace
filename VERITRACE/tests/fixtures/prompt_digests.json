@@ -1,0 +1,72 @@
+[
+  {
+    "module": "veritrace.agent.prompts.planner",
+    "name": "VERITRACE_PLANNER_PROMPT",
+    "sha256": "f9ac02e9ad83d33ae4c5d26273c411dea9e3d4d580b9b324c4f262639ba4621a"
+  },
+  {
+    "module": "veritrace.agent.prompts.planner",
+    "name": "VERITRACE_PLANNER_PROMPT_CN",
+    "sha256": "db3736605f4464a05923e6b0314857fa879e6d8aa8a58cd322ce14a1b76bcfda"
+  },
+  {
+    "module": "veritrace.agent.prompts.planner",
+    "name": "COGNITIVE_GRAPH_PLANNING_EXTENSION",
+    "sha256": "73fff3e66b690efad64f0379a7b85549e3bcc24f261f4fc6e97e59477e9442f1"
+  },
+  {
+    "module": "veritrace.agent.prompts.planner",
+    "name": "COGNITIVE_GRAPH_PLANNING_EXTENSION_CN",
+    "sha256": "f30ebbf2f3b3fdf09e626a5144c2fb8b2e2ada847e7559a3bbb75985c3025f5d"
+  },
+  {
+    "module": "veritrace.agent.prompts.searcher",
+    "name": "SEARCHER_PROMPT_EN",
+    "sha256": "a68e17f6d867782325c17967d6a8aa2f51b6ac35699ee8c04be59e8750cb5dfe"
+  },
+  {
+    "module": "veritrace.agent.prompts.searcher",
+    "name": "SEARCHER_PROMPT_CN",
+    "sha256": "5d3583b692f5e9c21f5a52415a71a1836d720132c5c7daf21168ecaeb5a177ba"
+  },
+  {
+    "module": "veritrace.agent.prompts.cognitive",
+    "name": "COGNITIVE_GRAPH_PARSE_PROMPT",
+    "sha256": "7a1a0428a683a18dae1bf243f4a199b2f9599f3ef30aa2f727512dac9df2e25a"
+  },
+  {
+    "module": "veritrace.agent.prompts.cognitive",
+    "name": "COGNITIVE_GRAPH_PARSE_PROMPT_EN",
+    "sha256": "c11a8dbaf1c5ebca58d2f07723e23537883a30578266998f731e281fcaa071de"
+  },
+  {
+    "module": "veritrace.agent.prompts.cognitive",
+    "name": "COGNITIVE_GRAPH_UPDATE_PROMPT",
+    "sha256": "9ed30d5ec61cc3552921d7ab6fb3640b5fba6e12e132721a64557d53fd2aee10"
+  },
+  {
+    "module": "veritrace.agent.prompts.cognitive",
+    "name": "COGNITIVE_GRAPH_UPDATE_PROMPT_CN",
+    "sha256": "03e2fe0b510becae53b810bcf8c51491e0e1ed7f5c28482dc9a77d3ed84d56b2"
+  },
+  {
+    "module": "veritrace.agent.prompts.cognitive",
+    "name": "PHASE1_RESTRUCTURE_PROMPT",
+    "sha256": "cdc615264e57c53b11cca7fc8777af94af4e604755ad62e2ae9e2500af95f429"
+  },
+  {
+    "module": "veritrace.agent.prompts.cognitive",
+    "name": "PHASE1_RESTRUCTURE_PROMPT_EN",
+    "sha256": "e83865f4da3674f38b25f70e8106e6ddfc2b2427a29be28cc9940a9a2b1aba13"
+  },
+  {
+    "module": "veritrace.agent.prompts.cognitive",
+    "name": "PHASE2_RECONNECT_PROMPT",
+    "sha256": "fe12355a186090178fdc109bde033986c9b45da0d94f1db3c13a3dc40d38137b"
+  },
+  {
+    "module": "veritrace.agent.prompts.cognitive",
+    "name": "PHASE2_RECONNECT_PROMPT_EN",
+    "sha256": "7fe063a4ba37cf63d4b4ef7644d0fd774388e0fa88b6f16147c85644c44e7751"
+  }
+]

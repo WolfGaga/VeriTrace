@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "veritrace"
+version = "0.2.0"
+description = "Evidence-grounded research with an evolving cognitive graph"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+dependencies = [
+  "anthropic", "beautifulsoup4", "duckduckgo-search==5.3.1b1", "fastapi",
+  "janus", "openai", "pydantic>=2.6,<3", "python-dotenv",
+  "requests", "sse-starlette", "uvicorn",
+]
+
+[project.optional-dependencies]
+documents = ["chardet", "openpyxl", "pandas", "pdfplumber", "tabulate"]
+browser = ["playwright"]
+ui = ["gradio>=5,<6", "streamlit"]
+dev = ["httpx", "pytest", "ruff"]
+
+[project.scripts]
+veritrace = "veritrace.terminal:main"
+veritrace-server = "veritrace.app:main"
+
+[tool.setuptools.packages.find]
+include = ["veritrace*"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E9", "F"]
+
+[tool.ruff.format]
+exclude = ["veritrace/agent/prompts/*"]

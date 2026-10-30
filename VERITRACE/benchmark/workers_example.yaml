@@ -1,0 +1,8 @@
+# Copy to an ignored workers.yaml and supply your own credentials.
+# Workers take queries from a shared queue.
+workers:
+  - dashscope_key: YOUR_DASHSCOPE_KEY_1
+    # Omit silicon_key to run every model role on DashScope.
+    silicon_key: YOUR_SILICONFLOW_KEY
+  - dashscope_key: YOUR_DASHSCOPE_KEY_2
+  - dashscope_key: YOUR_DASHSCOPE_KEY_3

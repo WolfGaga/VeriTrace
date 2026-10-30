@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use VeriTrace in your research, please cite the paper below."
+type: software
+title: VeriTrace
+url: "https://github.com/WolfGaga/VeriTrace"
+license: Apache-2.0
+authors:
+  - family-names: Zhao
+    given-names: Haolang
+  - family-names: Long
+    given-names: Yunbo
+  - family-names: Beckenbauer
+    given-names: Lukas
+  - family-names: Brintrup
+    given-names: Alexandra
+preferred-citation:
+  type: article
+  title: "VeriTrace: Evolving Mental Models for Deep Research Agents"
+  authors:
+    - family-names: Zhao
+      given-names: Haolang
+    - family-names: Long
+      given-names: Yunbo
+    - family-names: Beckenbauer
+      given-names: Lukas
+    - family-names: Brintrup
+      given-names: Alexandra
+  journal: arXiv
+  year: 2026
+  doi: "10.48550/arXiv.2605.26081"
+  url: "https://arxiv.org/abs/2605.26081"

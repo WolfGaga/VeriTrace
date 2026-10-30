@@ -1,0 +1,60 @@
+{
+	"name": "veritrace-frontend",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"test": "node tests/research-state.cjs",
+		"start": "vite --host --mode dev",
+		"start:dev": "vite --host --mode dev",
+		"start:staging": "vite --host --mode staging",
+		"start:prod": "vite --host --mode production",
+		"build": "tsc && vite build",
+		"build:dev": "tsc && vite build --mode dev",
+		"build:staging": "tsc && vite build --mode staging",
+		"build:prod": "tsc && vite build --mode production",
+		"preview": "vite preview",
+		"prettier": "prettier --write ."
+	},
+	"devDependencies": {
+		"@babel/plugin-proposal-optional-chaining": "^7.21.0",
+		"@tailwindcss/typography": "^0.5.19",
+		"@types/hast": "3.0.4",
+		"@types/node": "^18.15.11",
+		"@types/react": "^18.0.28",
+		"@types/react-dom": "^18.0.11",
+		"@types/three": "^0.160.0",
+		"@vitejs/plugin-legacy": "^4.0.2",
+		"@vitejs/plugin-react": "^3.1.0",
+		"autoprefixer": "^10.4.23",
+		"husky": "^9.0.11",
+		"lint-staged": "^15.2.7",
+		"postcss": "^8.5.6",
+		"prettier": "^3.0.0",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"tailwindcss": "^3.4.19",
+		"terser": "^5.16.9",
+		"typescript": "^4.9.3",
+		"vite": "^4.2.1"
+	},
+	"dependencies": {
+		"@microsoft/fetch-event-source": "^2.0.1",
+		"@react-three/drei": "^9.122.0",
+		"@react-three/fiber": "^8.18.0",
+		"antd": "^5.18.3",
+		"clsx": "^2.1.1",
+		"framer-motion": "^10.18.0",
+		"react-markdown": "^9.0.1",
+		"react-router-dom": "^6.11.2",
+		"rehype-raw": "^7.0.0",
+		"rehype-sanitize": "6.0.0",
+		"remark-gfm": "^4.0.1",
+		"tailwind-merge": "^2.6.0",
+		"three": "^0.160.1",
+		"three-stdlib": "2.36.1"
+	},
+	"lint-staged": {
+		"**/*.{ts, tsx, less, module.less, json, md, .html}": "prettier --write ."
+	}
+}

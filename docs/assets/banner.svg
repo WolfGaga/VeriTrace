@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-label="VeriTrace: Evolving Mental Models for Deep Research Agents">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#f5f9ff"/><stop offset="1" stop-color="#f1edff"/></linearGradient><linearGradient id="brand"><stop stop-color="#0585ef"/><stop offset="1" stop-color="#8750ed"/></linearGradient></defs>
+<rect width="1200" height="260" rx="24" fill="url(#bg)"/>
+<g stroke="#ccd8f2" stroke-width="2" fill="none"><path d="M827 60 926 104 1050 54M926 104l-68 100M926 104l147 82M1050 54l23 132"/></g>
+<g fill="#fff" stroke="#bdcae7"><circle cx="827" cy="60" r="12"/><circle cx="858" cy="204" r="12"/><circle cx="1050" cy="54" r="12"/><circle cx="1073" cy="186" r="12"/></g><circle cx="926" cy="104" r="23" fill="url(#brand)"/>
+<g transform="translate(52 62)" fill="none" stroke="url(#brand)" stroke-width="5" stroke-linejoin="round"><path d="m0 17 30-17 30 17-30 17Z"/><path d="m0 32 30 17 30-17M0 47l30 17 30-17"/></g>
+<g font-family="Inter,Segoe UI,Arial,sans-serif"><text x="136" y="111" font-size="53" font-weight="700" letter-spacing="-2" fill="#152347">VeriTrace</text><text x="55" y="170" font-size="25" fill="#2e4268">Evolving Mental Models for Deep Research Agents</text><text x="57" y="212" font-size="13" letter-spacing="2" font-weight="600" fill="#677798">FINDINGS OF EMNLP 2026  ·  OPEN SOURCE</text></g>
+</svg>

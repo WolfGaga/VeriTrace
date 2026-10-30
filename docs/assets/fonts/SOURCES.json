@@ -1,0 +1,16 @@
+[
+  {
+    "family": "Inter",
+    "file": "inter-latin.woff2",
+    "source": "https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/inter/OFL.txt",
+    "bytes": 48256
+  },
+  {
+    "family": "JetBrains Mono",
+    "file": "jetbrains-mono-latin.woff2",
+    "source": "https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbV2o-flEEny0FZhsfKu5WU4xD7OwE.woff2",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/jetbrainsmono/OFL.txt",
+    "bytes": 40404
+  }
+]

@@ -1,0 +1,46 @@
+# Credentials and machine-specific configuration
+.env
+.env.*
+!.env.example
+**/benchmark/workers.yaml
+*.key
+*.secret
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage*
+htmlcov/
+build/
+dist/
+*.egg-info/
+.venv/
+venv/
+
+# Frontend
+node_modules/
+.vite-cache/
+VERITRACE/frontend/tests/artifacts/
+
+# Runtime and evaluation output
+VERITRACE/database/
+VERITRACE/eval_data/
+VERITRACE/benchmark/logs/
+VERITRACE/benchmark/evidence*/
+VERITRACE/benchmark/*results*.jsonl
+deep_research_bench/results/
+logs/
+temp/
+*.log
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Generated project site
+.site/
+.demo-capture/
